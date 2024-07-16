@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    flex: 1;
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-section, .form-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-card {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-section {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"],
+#product-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#product-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#product-form button[type="submit"] {
+    background: #5300C8;
+;
+    color: white;
+}
+
+#product-form button[type="submit"]:hover {
+    background: #390286;
+}
+
+#product-form button#clear-btn {
+    background: #ccc;
+}
+
+#product-form button#clear-btn:hover {
+    background: #999;
+}
+
+footer {
+    background: #5300C8;
+;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+
+    
+}
+
+header {
+    background: #5300C8;
+;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
